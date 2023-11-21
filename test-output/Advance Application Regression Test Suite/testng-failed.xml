@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Advance Application Regression Test Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <listeners>
+    <listener class-name="com.mk.selenium.webdriver.Reporter.ReportListener"/>
+    <listener class-name="com.mk.selenium.webdriver.Reporter.PDFListener"/>
+  </listeners>
+  <test name="Regression Suite For Project Test(failed)">
+    <classes>
+      <class name="com.mk.selenium.page.testclass">
+        <methods>
+          <include name="killChromeProcess"/>
+          <include name="setupApplication"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="checkDashBoarScreendef"/>
+          <include name="afterclassExecution"/>
+          <include name="afterSuiteActions"/>
+        </methods>
+      </class> <!-- com.mk.selenium.page.testclass -->
+    </classes>
+  </test> <!-- Regression Suite For Project Test(failed) -->
+</suite> <!-- Failed suite [Advance Application Regression Test Suite] -->
